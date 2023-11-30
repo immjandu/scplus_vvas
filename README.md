@@ -67,7 +67,7 @@ gst-launch-1.0 filesrc location=${INPUT_FILE} \
 ! filesink location=./out_fr.h264
 ```
 
-## Trouble Shooting
+## TroubleShooting
 
 - gdb: error while loading shared libraries: libbabeltrace.so.1: cannot open shared object file: No such file or directory
 ```shell
