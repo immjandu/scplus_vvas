@@ -1,0 +1,17 @@
+{
+  "xclbin-location": "/lib/firmware/xilinx/kv260-smartcam/kv260-smartcam.xclbin",
+  "vvas-library-repo": "/usr/lib/aarch64-linux-gnu/",
+  "kernel": {
+    "library-name": "libvvas_xdpuinfer.so",
+    "config": {
+      "model-name": "densebox_640_360",
+      "model-class": "FACEDETECTRECOG",
+      "model-path": "/opt/xilinx/kv260-smartcam/share/vitis_ai_library/models",
+      "max-objects": 5,
+      "run_time_model": false,
+      "need_preprocess": true,
+      "performance_test": false,
+      "debug_level": 0
+    }
+  }
+}

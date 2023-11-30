@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "InceptionResnetV1.xmodel",
+    "kernel": [
+        "subgraph_InceptionResnetV1__24952_transfered_depthwise_conv2d_weights_new"
+    ],
+    "target": "DPUCZDX8G_ISA1_B3136"
+}

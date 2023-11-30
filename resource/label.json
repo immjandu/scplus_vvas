@@ -1,0 +1,21 @@
+{
+  "model-name": "InceptionResnetV1",
+  "num-labels": 15,
+  "labels": [
+    {"label": 0, "name": "alvin_a", "display_name":"alvin_a"},
+    {"label": 1, "name": "barming_j", "display_name": "barming_j"},
+    {"label": 2, "name":"bruce_perens", "display_name":"bruce_perens"},
+    {"label": 3, "name":"choong_lee", "display_name":"choong_lee"},
+    {"label": 4, "name":"damian_l", "display_name":"damian_l"},
+    {"label": 5, "name":"garen_cy", "display_name":"garen_cy"},
+    {"label": 6, "name":"herbert_yoo", "display_name":"herbert_yoo"},
+    {"label": 7, "name":"jarven_17", "display_name":"jarven_17"},
+    {"label": 8, "name":"jayce_shin", "display_name":"jayce_shin"},
+    {"label": 9, "name":"lucian_lee", "display_name":"lucian_lee"},
+    {"label": 10, "name":"mjkim_7770", "display_name":"mjkim_7770"},
+    {"label": 11, "name":"moonmi_m", "display_name":"moonmi_m"},
+    {"label": 12, "name":"mylo_ahn", "display_name":"mylo_ahn"},
+    {"label": 13, "name":"rory_k", "display_name":"rory_k"},
+    {"label": 14, "name":"tim_dw", "display_name":"tim_dw"}
+  ]
+}

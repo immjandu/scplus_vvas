@@ -1,0 +1,21 @@
+root
+    subgraph_data [device=USER]
+    subgraph_L0 [device=DPU,fingerprint=0x101000016010406,DPU=DPUCZDX8G_ISA1_B3136,I=[xir_tensor{data_fixed:(1,360,640,3), fixpos=0 # of elements= 691200}],O=[xir_tensor{bb-output-tiled_fixed:(1,96,160,4), fixpos=0 # of elements= 61440},xir_tensor{pixel-conv-tiled_fixed:(1,96,160,2), fixpos=4 # of elements= 30720}]]
+        subgraph_data_upload_0
+        subgraph_L0
+        subgraph_L0_1
+        subgraph_cp1
+        subgraph_L1
+        subgraph_cp2
+        subgraph_L2
+        subgraph_L3
+        subgraph_L4
+        subgraph_cp5
+        subgraph_L5
+        subgraph_L6
+        subgraph_pixel-conv
+        subgraph_pixel-tile_download_0
+        subgraph_bb-output
+        subgraph_bb-tile_download_0
+    subgraph_pixel-conv-tiled_fixed_ [device=CPU]
+    subgraph_bb-output-tiled_fixed_ [device=CPU]
