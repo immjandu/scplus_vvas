@@ -60,16 +60,16 @@ int vvas_xfacerecog::run(vvas_xkpriv * kpriv, std::vector<cv::Mat>& images, GstI
     // std::tie(max_val, max_idx) = get_max_values(*result.feature, kpriv->num_labels);
     // LOG_MESSAGE(LOG_LEVEL_INFO, kpriv->log_level, "         RECOG feature max idx and value : %d / (%f)", max_idx, max_val);
 
-    float embedding_max_val = -1.0;
+    float embedding_max_val = -100.0;
     int embedding_max_idx = 0;
-    for (int i=0; i<embedding_arr.size(); i++) {
-      float feature1_norm = feature_norm((*result.feature).data());
-      float feature2_norm = embedding_norm_arr[i];
-      float dot = feature_dot((*result.feature).data(), embedding_arr[i].data());
+    float feature1_norm = feature_norm((*result.feature).data());
+    for (int e=0; e<embedding_arr.size(); e++) {
+      float feature2_norm = embedding_norm_arr[e];
+      float dot = feature_dot((*result.feature).data(), embedding_arr[e].data());
       float cosine_sim = dot * feature1_norm * feature2_norm;
       if (cosine_sim > embedding_max_val) {
         embedding_max_val = cosine_sim;
-        embedding_max_idx = i;
+        embedding_max_idx = e;
       }
     }
     std::string max_class = embedding_class_arr[embedding_max_idx];

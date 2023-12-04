@@ -10,7 +10,7 @@
       "model-path": "/opt/xilinx/kv260-smartcam/share/vitis_ai_library/models",
       "max-objects": 5,
       "run_time_model": false,
-      "need_preprocess": true,
+      "need_preprocess": false,
       "performance_test": false,
       "debug_level": 0
     }
