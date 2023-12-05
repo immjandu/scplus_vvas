@@ -38,7 +38,7 @@ std::tuple<float, int> get_max_values_old(std::array<float, 512> arr, int len) {
 }
 
 float feature_norm(const float *feature) {
-  int sum = 0;
+  float sum = 0;
   for (int i = 0; i < 512; ++i) {
     sum += feature[i] * feature[i];
   }
@@ -46,7 +46,7 @@ float feature_norm(const float *feature) {
 }
 
 float feature_dot(const float *f1, const float *f2) {
-  int dot = 0;
+  float dot = 0;
   for (int i = 0; i < 512; ++i) {
     dot += f1[i] * f2[i];
   }
